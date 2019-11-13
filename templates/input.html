@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block head %}
+    <h1> Enter the tweet</h1>
+{% endblock %}
+
+{% block body %}
+    <form action="{{url_for('displayResult')}}" method="post">
+        Lookup text: <input type="text" name="hashtag">
+        <input type="submit">
+</form>
+{% endblock %}

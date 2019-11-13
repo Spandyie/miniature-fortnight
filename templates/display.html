@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <h1>Display the data</h1>
+{% endblock %}
+
+{% block body %}
+    <table>
+    <tr>
+        <th>User-name</th>
+        <th>Tweet</th>
+        <th>Location</th>
+        </tr>
+        {% for data in tweet_array %}
+            <tr>
+                <td>{{data["username"] }}</td>
+                <td>{{ data["tweet"] }}</td>
+                <td>{{ data["location"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
