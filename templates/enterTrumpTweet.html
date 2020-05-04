@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+        <form action="{{ url_for('predictTrump') }}" method="post">
+        Lookup text: <input type="text" name="keyword">
+        <input type="submit">
+{% endblock %}

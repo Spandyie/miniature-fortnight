@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+<h1> What Would Trump Tweet ?</h1>
+{% endblock %}
+
+{%  block body%}
+    <table>
+        {% for trumpTweet in final_parsed_tweets %}
+            <tr>
+                <td>{{ trumpTweet[0] }}</td>
+                <td>{{ trumpTweet[1] }}</td>
+                <td>{{ trumpTweet[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{%endblock%}
