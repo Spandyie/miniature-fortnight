@@ -102,10 +102,10 @@ def my_input():
 def displayResult():
     N=5
     search_word = request.form['hashtag']
-    consumer_key = 'jGmHZTqngDM6j10ShQUssWwk3'
-    consumer_secret_key= 'bdpCgUeii0HITOClnd6cqhKCEXwKARG5HvtCMBafGlXP0fUah3'
-    access_token = '97490655-XsIlPX4rsJ0mMWUtNUjERKUoGuH6WDZlz3lU1jDu0'
-    access_token_key = 'gZDAsgaEk9g5nXfyi18GagAA4G2CDafSGG8ikgLcmweKc'
+    consumer_key = ....
+    consumer_secret_key= ....
+    access_token = ...
+    access_token_key = ...
     # setup authorization
     authorization_handle = tw.OAuthHandler(consumer_key=consumer_key, consumer_secret=consumer_secret_key)
     authorization_handle.set_access_token(key=access_token, secret=access_token_key)
@@ -134,10 +134,10 @@ def displayResult():
 @app.route('/trump', methods=['POST', 'GET'])
 def mineTrump():
     N= 5
-    consumer_key = 'jGmHZTqngDM6j10ShQUssWwk3'
-    consumer_secret_key = 'bdpCgUeii0HITOClnd6cqhKCEXwKARG5HvtCMBafGlXP0fUah3'
-    access_token = '97490655-XsIlPX4rsJ0mMWUtNUjERKUoGuH6WDZlz3lU1jDu0'
-    access_token_key = 'gZDAsgaEk9g5nXfyi18GagAA4G2CDafSGG8ikgLcmweKc'
+    consumer_key = ...
+    consumer_secret_key = ...
+    access_token = ...
+    access_token_key = ...
     # setup authorization
     authorization_handle = tw.OAuthHandler(consumer_key=consumer_key, consumer_secret=consumer_secret_key)
     authorization_handle.set_access_token(key=access_token, secret=access_token_key)
